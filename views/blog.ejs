@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+
+    <%- include("navbar")%>
+
+    <!-- Blog Cards Section -->
+    <div class="container mx-auto mt-8 px-4 min-h-screen">
+        <h2 class="text-3xl font-semibold mb-8">Latest Blog Posts</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <!-- Blog Card 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://via.placeholder.com/400" alt="Blog Image" class="w-full h-40 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Blog Title 1</h3>
+                    <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-blue-500 hover:underline">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog Card 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="https://via.placeholder.com/400" alt="Blog Image" class="w-full h-40 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Blog Title 2</h3>
+                    <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="mt-4">
+                        <a href="#" class="text-blue-500 hover:underline">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more blog cards here -->
+        </div>
+    </div>
+
+    <%- include("footer")%>
+
+</body>
+
+</html>
