@@ -60,7 +60,7 @@
                             <%= todo.description %>
                         </td>
                         <td class="px-4 py-2 border border-gray-300">
-                            <form action="/todo/delete/<%= index %>" method="POST" class="inline">
+                            <form action="/todo/delete/<%= todo.id %>" method="post" class="inline">
                                 <button type="submit"
                                     class="bg-red-500 text-white px-2 py-1 rounded-md hover:bg-red-600 transition duration-200">Delete</button>
                             </form>
